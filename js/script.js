@@ -7,12 +7,16 @@ function enablePhotoUpload() {
       changeMemePicture(uploadImage)
       // document.querySelector("#display-image").style.backgroundImage = `url(${uploadImage})`
     }) 
-    reader.readAsDataURL(this.files[4])
+    reader.readAsDataURL(this.files[0])
   })
 }
 
 async function mapImageList(){
   const memesObject = [
+    {
+      "name": "chloe",
+      "path": "pictures/chloe.jpg"
+    },
     {
       "name": "chapolin",
       "path": "pictures/chapolin.jpg"
@@ -28,10 +32,6 @@ async function mapImageList(){
     {
       "name": "chapolin3",
       "path": "pictures/chapolin3.png"
-    },
-    {
-      "name": "chloe",
-      "path": "pictures/chloe.jpg"
     },
     {
       "name": "funny-cat1",
